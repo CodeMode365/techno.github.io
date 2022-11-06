@@ -16,33 +16,27 @@ body {
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    // transform: translateX(0);
     opacity: 1;
   }
 }
+.active {
+  animation: 1s var(--delay) showup forwards;
+}
 
-// @keyframes motion {
-//   0%,
-//   100% {
-//     background-image: linear-gradient(70deg, $light, $blur);
-//   }
-//   50% {
-//     background-image: linear-gradient(70deg, $blur, $light);
-//   }
-// }
 $light: rgb(109, 99, 255);
 $blur: rgb(58, 139, 190);
 $dark: rgb(0, 2, 53);
 $text-sec: rgba(255, 255, 255, 0.746);
 $wh: white;
+$title-size: 2.3rem;
 
 ::-webkit-scrollbar {
   background-color: rgb(237, 220, 220);
   width: 13px;
 }
 ::-webkit-scrollbar-thumb {
-  // background: $blur;
-  background-image: linear-gradient( $dark, $blur);
+  background-image: linear-gradient($dark, $blur);
   border: 2px solid rgb(237, 220, 220);
   border-radius: 20px;
 }
@@ -117,6 +111,7 @@ body {
         font-size: 3.2rem;
         color: $wh;
         line-height: 3.5rem;
+        opacity: 0;
         span {
           color: rgb(109, 99, 255);
         }
@@ -243,9 +238,9 @@ body {
 .about {
   margin-block: 4rem;
   color: $wh;
-  h2 {
+  .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: $title-size;
   }
   .container1,
   .container2 {
@@ -253,8 +248,9 @@ body {
     grid-template-columns: 50% 50%;
     // min-height: 5rem;
     margin-top: 5rem;
-
     .theme-img {
+      opacity: 0;
+
       img {
         height: 100%;
         width: 100%;
@@ -264,9 +260,11 @@ body {
       transform: translate(0, -2rem);
       padding-top: 1rem;
       margin-block-start: auto;
+      opacity: 0;
+      transform: translateY(-1.7rem);
       h2 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
       p {
         font-size: 2rem;
@@ -315,7 +313,7 @@ body {
   cursor: pointer;
   color: $wh;
   .title {
-    font-size: 3rem;
+    font-size: $title-size;
     // text-align: justify;
     text-align: center;
   }
@@ -335,6 +333,10 @@ body {
       border-top-right-radius: 1rem;
       border-bottom-left-radius: 2rem;
       border-bottom-right-radius: 2rem;
+      opacity: 0;
+      // @media (prefers-reduced-motion: no-preference) {
+      //   animation: 1s 0.5s showup forwards;
+      // }
 
       img {
         height: 10rem;
@@ -366,8 +368,7 @@ body {
     align-items: center;
     border-radius: 2rem;
     background-image: linear-gradient(90deg, $blur, $dark, $blur);
-    // background-blend-mode: lighten;
-    // box-shadow: 0 -10rem 7rem 4rem $blur;
+    opacity: 0;
     h4 {
       font-size: 1rem;
       color: rgb(110, 108, 108);

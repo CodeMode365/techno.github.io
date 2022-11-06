@@ -17,7 +17,6 @@ body {
     opacity: 0;
   }
   to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -28,10 +27,14 @@ body {
     opacity: 0;
   }
   to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
+.active {
+  -webkit-animation: 1s var(--delay) showup forwards;
+          animation: 1s var(--delay) showup forwards;
+}
+
 ::-webkit-scrollbar {
   background-color: rgb(237, 220, 220);
   width: 13px;
@@ -109,6 +112,7 @@ body a {
   font-size: 3.2rem;
   color: white;
   line-height: 3.5rem;
+  opacity: 0;
   -webkit-animation: 1s showup forwards;
           animation: 1s showup forwards;
 }
@@ -234,15 +238,19 @@ body a {
   margin-block: 4rem;
   color: white;
 }
-.about h2 {
+.about .title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 .about .container1,
 .about .container2 {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 5rem;
+}
+.about .container1 .theme-img,
+.about .container2 .theme-img {
+  opacity: 0;
 }
 .about .container1 .theme-img img,
 .about .container2 .theme-img img {
@@ -255,11 +263,13 @@ body a {
   padding-top: 1rem;
   -webkit-margin-before: auto;
           margin-block-start: auto;
+  opacity: 0;
+  transform: translateY(-1.7rem);
 }
 .about .container1 .theme-content h2,
 .about .container2 .theme-content h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 .about .container1 .theme-content p,
 .about .container2 .theme-content p {
@@ -308,7 +318,7 @@ body a {
   color: white;
 }
 .clients .title {
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 .clients .comments {
@@ -328,6 +338,7 @@ body a {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  opacity: 0;
 }
 .clients .comments .card img {
   height: 10rem;
@@ -357,6 +368,7 @@ body a {
   align-items: center;
   border-radius: 2rem;
   background-image: linear-gradient(90deg, rgb(58, 139, 190), rgb(0, 2, 53), rgb(58, 139, 190));
+  opacity: 0;
 }
 .clients .big-message h4 {
   font-size: 1rem;

@@ -16,32 +16,38 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#clients">Clients</a></li>
           <li><a href="#message">Message</a></li>
+
         </ul>
+
+        <!-- <button style="height: 3rem; width:3rem;cursor: pointer;">
+      <img style="height: 100%; width:100%;background: transparent;" src="./asset/menu.svg" alt="Youtube" />
+        </button> -->
+      
       </nav>
       <div class="light"></div>
       <div class="hero">
         <div class="content">
-          <h2>
+          <h2 class="fadeIn" style="--delay:0s">
             Providing <span>Technology</span><br />
             on Hands
           </h2>
-          <p>
+          <p class="fadeIn" style="--delay:0.5s">
             Give the handy tasks to our hand and with no worries. Serving
             millions around the world right at the moment.
           </p>
           <div class="buttons">
-            <button><a>Enroll Now</a></button>
-            <button><a>Contact Now</a></button>
+            <button class="fadeIn" style="--delay:1.5s"><a>Enroll Now</a></button>
+            <button class="fadeIn" style="--delay:2s"><a>Contact Now</a></button>
           </div>
         </div>
-        <div class="hero-img"><a>
+        <div class="hero-img fadeIn" style="--delay:1s" ><a>
           <img src="./asset/hero.svg" alt="Hero image" />
         </div>
       </div>
 
       <div class="served">
-        <h2>Served To</h2>
-        <ul>
+        <h2 class="fadeIn" style="--delay:0s">Served To</h2>
+        <ul class="fadeIn" style="--delay:1s">
           <li><a href="www.tesla.com" title="tesla"><img src="./asset/brand.png" alt="Tesla" /></a></li>
           <li><a href="www.facebook.com" title="facebook"><img src="./asset/facebook.png" alt="facebook" /></a></li>
           <li><a href="www.github.com" title="github"><img src="./asset/github.png" alt="Github" /></a></li>
@@ -51,12 +57,12 @@
         </ul>
       </div>
       <div class="about" id="about">
-        <h2>About Us</h2>
+        <h2 class="title">About Us</h2>
         <div class="container1">
-          <div class="theme-img">
+          <div class="theme-img fadeIn" style="--delay:.5s" >
             <img src="./asset/clothTech.svg" />
           </div>
-          <div class="theme-content">
+          <div class="theme-content fadeIn" style="--delay:1s">
             <h2>
               Free Enroll For First<br />
               1000 users
@@ -69,7 +75,7 @@
           </div>
         </div>
         <div class="container2">
-          <div class="theme-content">
+          <div class="theme-content fadeIn" style="--delay:1s" >
             <h2>
               Why choosing us is <br />
               worth it ?
@@ -80,7 +86,7 @@
             </p>
             <button>Read Docs</button>
           </div>
-          <div class="theme-img">
+          <div class="theme-img fadeIn" style="--delay:.5s" >
             <img src="./asset/attachment-girl.svg" />
           </div>
         </div>
@@ -91,7 +97,7 @@
           to Say about Us
         </h2>
         <div class="comments">
-          <div class="card" style="--i:1s">
+          <div class="card fadeIn" style="--delay:0s">
             <img src="./asset/girl1.jpg" alt="Girl in pink hair" />
             <h2 class="name">Ena Larva</h2>
             <p>
@@ -100,7 +106,7 @@
               get success.
             </p>
           </div>
-          <div class="card" style="--i:2s">
+          <div class="card fadeIn" style="--delay:0.5s">
             <img src="./asset/girl2.jpg" alt="Girl in pink hair" />
             <h2 class="name">Ester Italia</h2>
             <p>
@@ -109,7 +115,7 @@
               get success.
             </p>
           </div>
-          <div class="card" style="--i:3s">
+          <div class="card fadeIn" style="--delay:1s">
             <img src="./asset/girl3.jpg" alt="Girl in pink hair" />
             <h2 class="name">Neema Tamang</h2>
             <p>
@@ -119,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="big-message" id="message">
+        <div class="big-message fadeIn" style="--delay:0.2s" id="message">
           <h4>Filling your future with security</h4>
           <h1>Be A part Of the Next<br />Big THing</h1>
           <button>Get Access</button>
@@ -170,5 +176,6 @@
         </div>
       </div>
     </div>
+    <script src="./aos.js"></script>
   </body>
 </html>
