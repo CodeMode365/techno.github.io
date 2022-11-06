@@ -6,4 +6,6 @@
 ## 2) open index.html file 
 ## 3) Oh oh its done
 
+<p align="center">
 <img align="center" src="https://i.postimg.cc/R0j4cVgq/Techno-Landing.jpg" />
+</p>
