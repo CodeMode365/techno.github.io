@@ -6,4 +6,4 @@
 ## 2) open index.html file 
 ## 3) Oh oh its done
 
-<img style="display:none;" src="https://i.postimg.cc/R0j4cVgq/Techno-Landing.jpg" />
+<img align="center" src="https://i.postimg.cc/R0j4cVgq/Techno-Landing.jpg" />
