@@ -2,8 +2,8 @@
 # techno-landing.github.io
 
 ## steps for running code
---> git clone https://github.com/CodeMode365/techno.github.io
---> open index.html file 
---> Oh oh its done
+# git clone https://github.com/CodeMode365/techno.github.io
+# open index.html file 
+# Oh oh its done
 
-<img src="https://github.com/CodeMode365/techno.github.io/edit/main/README.md" />
+<img src="https://i.postimg.cc/R0j4cVgq/Techno-Landing.jpg" />
