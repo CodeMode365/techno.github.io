@@ -2,6 +2,8 @@
 ## click --> https://codemode365.github.io/techno.github.io/
 # techno-landing.github.io
 
+## contributers are welcomed
+
  # steps for running code
 ## 1) git clone https://github.com/CodeMode365/techno.github.io
 ## 2) open index.html file 
