@@ -1,6 +1,5 @@
 # Techno-website  
 ## click --> https://codemode365.github.io/techno.github.io/
-# techno-landing.github.io
 
 ## contributers are welcomed
 
