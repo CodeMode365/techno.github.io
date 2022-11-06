@@ -84,14 +84,17 @@ body a {
   font-size: 1.4rem;
   transition: 1s transform;
 }
+.main nav ul li .active {
+  color: rgb(109, 99, 255);
+}
 .main nav ul li a {
   transition: 0.5s;
 }
 .main nav ul li:hover a {
   color: rgb(109, 99, 255);
 }
-.main nav ul li .active {
-  color: rgb(109, 99, 255);
+.main nav #menu {
+  display: none;
 }
 .main .light {
   box-shadow: 0 0 19rem 15rem rgb(58, 139, 190);
@@ -512,18 +515,30 @@ body {
     font-size: 15%;
   }
 }
-@media screen and (max-width: 235px) {
-  .main {
+@media screen and (max-width: 480px) {
+  .main nav ul li {
+    font-size: 4rem;
+    margin: 1rem;
+  }
+  .main nav ul {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: rgba(98, 101, 194, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    width: 50vw;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main nav #menu {
+    display: block;
+  }
+  .main nav #menu:focus ~ .main nav ul {
     display: none;
-  }
-  body {
-    position: relative;
-  }
-  body::before {
-    color: rgb(255, 255, 255);
-    font-size: 7rem;
-    text-align: center;
-    position: absolute;
-    content: "Website not supported";
   }
 }/*# sourceMappingURL=style.css.map */
